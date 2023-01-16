@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Sofia Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #333, #444);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container
+{
+  background: #24283A;
+  padding: 2rem;
+  padding-top: 4rem;
+  position: relative;
+  margin: 1rem;
+}
+.green
+{
+  color: #32de84;
+}
+h1{
+  color: white;
+  margin: 0;
+  line-height: 2.3rem;
+}
+.heading4
+{
+  margin-top: 1rem;
+  color: #ccc;
+}
+label
+{
+  margin-right: 1rem;
+  color: white;
+}
+input{
+  box-sizing: border-box;
+  width: 44%;
+  background: #ccc;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 2px;
+  font-family: inherit;
+}
+.generate-btn
+{
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  background: #32de84;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+}
+.generate-btn:hover
+{
+  background: #32de85cd;
+}
+.passwords-container
+{
+  border-top: 1px solid black;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  place-items: center;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+}
+
+.password{
+  background: #333;
+  margin: .35rem 0;
+  width: fit-content;
+  color: white;
+  padding: .35rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  cursor: pointer;
+}
+.password:hover
+{
+  background: #444;
+}
+.delete
+{
+  padding: 0.36rem;
+  border: none;
+  background: #a11;
+  font-size: 1rem;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.delete:hover
+{
+  background: #f11;
+}
+.pass-container{
+  display: flex;
+  align-items: center;
+}
+.btn-container
+{
+  display: flex;
+  justify-content: center;
+}
+.success-msg
+{
+  position: absolute;
+  top: -75px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #32de84;
+  background: #24283A;
+  padding: .75rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 408px)
+{
+  #password
+  {
+    width: 100%;
+  }
+}
